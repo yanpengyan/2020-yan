@@ -16,7 +16,7 @@ class Bussiness extends Component{
         >
         </NavBar>
         <Merchart
-        onMechartEvent={()=>this.onMechartEvent()}
+          merchantEvent={ () => this.merchantEvent() }
         ></Merchart>
       </div>
     )
@@ -24,11 +24,10 @@ class Bussiness extends Component{
   onTabEvent=(index)=>{
 
   }
-  onMechartEvent=()=>{
-    // this.props.history.push(`/goods`)
-    // window.location.href='/goods'
+
+  merchantEvent = () => {
+    console.log('跳转事件')
     this.props.history.push('/goods')
-      
   }
 }
 export default Bussiness;

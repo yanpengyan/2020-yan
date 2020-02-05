@@ -15,28 +15,28 @@ class Merchart extends Component {
   render() {
     return (
       <MerchartWrapper>
-        <DlBox onClick={() => this.onMechartClick()}>
-      
-          <dt>
-            <ImageView
-              width="76px"
-              height="57px"
-              src="https://p0.meituan.net/waimaipoi/6c86a9774d19a649e7c4a5f8b1044f6821905.jpg@114h_80Q_0e_1l.webp?cimage=true"
-            />
-          </dt>
-          <dd>
-            <div className="title">晋城花店-麦当劳（新市街店）</div>
-            <div className="rate">⭐️</div>
-            <div className="shipping-news">起送：5 配送：5</div>
-          </dd>
-        </DlBox>
+        <DlBox onClick={ () => this.onMerchantClick() }>
+         <dt > 
+          <ImageView
+           width="76px"
+           height="57px"
+           src="https://p0.meituan.net/waimaipoi/6c86a9774d19a649e7c4a5f8b1044f6821905.jpg@114h_80Q_0e_1l.webp?cimage=true"
+           
+        />  
+         </dt>
+         <dd>
+           <div className="title">晋城花店-麦当劳（新市街店）</div>  
+           <div className="rate">⭐️</div>
+           <div className="shipping-news">起送：5 配送：5</div>
+         </dd>  
+        </DlBox> 
       </MerchartWrapper>
     )
   }
-  onMechartClick = () => {
-    console.log('zizizi')
-    const { onMechartEvent } = this.props
-    onMechartEvent && onMechartEvent()
+  onMerchantClick = () => {
+    console.log('我在子组件中')
+    const { merchantEvent } = this.props
+    merchantEvent && merchantEvent()
   }
 }
 export default Merchart

@@ -43,17 +43,16 @@ class Footer extends Component {
            )
          })
        }
-
       </ImageBox>
     )
   }
   componentDidMount() {
     axios.get('/api/list').then(res => {
-      console.log(res.data,'-----')
+      // console.log(res.data,'-----')
       this.setState(() => ({
         list: res.data
       }))
-      console.log(this.state.list)
+   
     })
   }
 

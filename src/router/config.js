@@ -9,6 +9,7 @@ const routes = [
   {
     path: '/',
     redirect: '/home'
+   
   },
   {
     path: '/home',
@@ -30,7 +31,7 @@ const routes = [
     }]
   },
   {
-    path: '/home/goods',
+    path: '/goods',
     component: GoodList,
   },{
     path: '/home/search',

@@ -18,7 +18,7 @@ const Footer = (props) => {
  
     return (
      <FooterBox>
-  <NavLink to='/home/bussiness'>首页</NavLink>
+        <NavLink to='/home/bussiness'>首页</NavLink>
         <NavLink to='/home/order'>订单</NavLink>
         <NavLink to='/home/mine'>我的</NavLink>
      </FooterBox>
